@@ -36,7 +36,7 @@ function loadCardsFromResponse(response) {
         div.appendChild(currentTitle);
 
         const author = response.data.response[i].author;
-        currentAuthor = document.createElement('h4');
+        currentAuthor = document.createElement('h5');
         currentAuthor.innerText = author;
         div.appendChild(currentAuthor);
 
@@ -46,7 +46,7 @@ function loadCardsFromResponse(response) {
         div.appendChild(currentGenre);
 
         const year = response.data.response[i].year;
-        currentYear = document.createElement('p');
+        currentYear = document.createElement('h5');
         currentYear.innerText = year;
         div.appendChild(currentYear);
 
